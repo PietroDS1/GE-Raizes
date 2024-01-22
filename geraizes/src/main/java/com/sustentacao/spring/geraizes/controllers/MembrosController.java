@@ -50,7 +50,6 @@ public class MembrosController {
 	            updatedMembro.setRamo(membros.getRamo());
 	            updatedMembro.setSexo(membros.getSexo());
 	            updatedMembro.setIdade(membros.getIdade());
-	            updatedMembro.setRegistro(membros.getRegistro());
 	            Membros savedMembro = repository.save(updatedMembro);
 	            return ResponseEntity.ok(savedMembro);
 	        } else {
